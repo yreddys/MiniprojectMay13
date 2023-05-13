@@ -15,6 +15,7 @@ public class JVD {
 	private int age;
 	private int land;
 	private int attendance;
+	private String email;
 	public int getId() {
 		return id;
 	}
@@ -45,19 +46,29 @@ public class JVD {
 	public void setAttendance(int attendance) {
 		this.attendance = attendance;
 	}
-	public JVD(int id, String name, int age, int land, int attendance) {
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	public JVD(int id, String name, int age, int land, int attendance, String email) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.age = age;
 		this.land = land;
 		this.attendance = attendance;
+		this.email = email;
 	}
+	
 	JVD(){}
 	@Override
 	public String toString() {
 		return "JVD [id=" + id + ", name=" + name + ", age=" + age + ", land=" + land + ", attendance=" + attendance
-				+ "]";
+				+ ", email=" + email + "]";
 	}
+	
+	
 	
 }
